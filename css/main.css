@@ -153,6 +153,26 @@ a {
 .container:after {
   clear: both;
 }
+.heading,
+.heading--xxl,
+.heading--xl,
+.heading--l,
+.heading--m,
+.heading--s,
+.heading--xs,
+.heading--xxs,
+.b-clients__heading,
+.b-leads__heading,
+.b-leads__item__heading,
+.b-order-form__heading,
+.b-portfolio__heading,
+.b-promo__heading--big,
+.b-promo__heading--small,
+.b-steps__heading,
+.b-traffic__heading,
+.b-traffic__item__heading {
+  margin: 6px 0;
+}
 .heading--xxl,
 .b-clients__heading,
 .b-portfolio__heading,
@@ -169,23 +189,29 @@ a {
 .heading--l {
   font-size: 38px;
 }
-.heading--md,
+.heading--m,
 .b-leads__item__heading {
   font-size: 32px;
 }
-.heading--sm,
+.heading--s,
 .b-promo__heading--small,
 .b-traffic__item__heading {
   font-size: 30px;
+}
+.heading--xs {
+  font-size: 24px;
+}
+.heading--xxs {
+  font-size: 21px;
 }
 .heading--uppercase {
   text-transform: uppercase;
 }
 .heading--margin {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .text {
-  line-height: 1.2;
+  line-height: 1.15;
 }
 .bold {
   font-family: 'PFDinCondPro-Bold', sans-serif;
@@ -263,9 +289,64 @@ a {
 .b-header {
   height: 84px;
   background: #f6f6f6;
+  padding: 10px 0;
+}
+.b-header__logo,
+.b-header__phones,
+.b-header__questions,
+.b-header__stats {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 60px;
+}
+.b-header__logo {
+  margin-right: 200px;
+}
+.b-header__phones,
+.b-header__questions,
+.b-header__stats {
+  text-align: right;
+  position: relative;
+}
+.b-header__stats {
+  font-size: 25px;
+  color: #808080;
+  padding-right: 70px;
+}
+.b-header__stats:after {
+  content: '';
+  width: 65px;
+  height: 70px;
+  background: url("../img/doc-icon.png") no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.b-header__stats strong {
+  font: 32px 'PFDinCondPro-Medium', sans-serif;
+}
+.b-header__questions {
+  font-size: 15px;
+  padding-right: 50px;
+}
+.b-header__questions:after {
+  content: '';
+  width: 39px;
+  height: 52px;
+  background: url("../img/phone-icon.png") no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.b-header__questions strong {
+  font-size: 17px;
+}
+.b-header__phone {
+  font-size: 18px;
+  margin: 5px 0;
 }
 .b-leads {
-  padding: 45px 0 0;
+  padding: 45px 30px;
   background: #f6f6f6;
   text-align: center;
 }
@@ -289,7 +370,7 @@ a {
 }
 .b-leads__image {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .b-leads__price {
   font-size: 24px;
@@ -363,6 +444,7 @@ a {
   display: inline-block;
   vertical-align: top;
   font-size: 17px;
+  color: #505050;
 }
 .b-steps__item + .b-steps__item {
   margin-left: 18px;
