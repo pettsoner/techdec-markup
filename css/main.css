@@ -3,30 +3,30 @@
 /* Подключение файлов
 ----------------------------------------------------------- */
 @font-face {
-  font-family: "PFDinDisplayPro-Regular";
-  src: url("../fonts/PFDinDisplayPro-Reg.eot");
-  src: url("../fonts/PFDinDisplayPro-Reg.eot?#iefix") format('embedded-opentype'), url("../fonts/PFDinDisplayPro-Reg.woff") format('woff'), url("../fonts/PFDinDisplayPro-Reg.ttf") format('truetype');
+  font-family: "PFDinCondPro-Regular";
+  src: url("../fonts/pfdintextcondpro-regular-webfont.eot");
+  src: url("../fonts/pfdintextcondpro-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/pfdintextcondpro-regular-webfont.woff") format('woff'), url("../fonts/pfdintextcondpro-regular-webfont.ttf") format('truetype'), url("../fonts/pfdintextcondpro-regular-webfont.svg#pf_din_text_cond_proregular") format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "PFDinDisplayPro-Light";
-  src: url("../fonts/PFDinDisplayPro-Light.eot");
-  src: url("../fonts/PFDinDisplayPro-Light.eot?#iefix") format('embedded-opentype'), url("../fonts/PFDinDisplayPro-Light.woff") format('woff'), url("../fonts/PFDinDisplayPro-Light.ttf") format('truetype');
+  font-family: "PFDinCondPro-Light";
+  src: url("../fonts/pfdintextcondpro-light-webfont.eot");
+  src: url("../fonts/pfdintextcondpro-light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/pfdintextcondpro-light-webfont.woff") format('woff'), url("../fonts/pfdintextcondpro-light-webfont.ttf") format('truetype'), url("../fonts/pfdintextcondpro-light-webfont.svg#pf_din_text_cond_prolight") format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "PFDinDisplayPro-Bold";
-  src: url("../fonts/PFDinDisplayPro-Bold.eot");
-  src: url("../fonts/PFDinDisplayPro-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/PFDinDisplayPro-Bold.woff") format('woff'), url("../fonts/PFDinDisplayPro-Bold.ttf") format('truetype');
-  font-weight: bold;
+  font-family: "PFDinCondPro-Bold";
+  src: url("../fonts/pfdintextcondpro-bold-webfont.eot");
+  src: url("../fonts/pfdintextcondpro-bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/pfdintextcondpro-bold-webfont.woff") format('woff'), url("../fonts/pfdintextcondpro-bold-webfont.ttf") format('truetype'), url("../fonts/pfdintextcondpro-bold-webfont.svg#pf_din_text_cond_probold") format('svg');
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "PFDinDisplayPro-Medium";
-  src: url("../fonts/PFDinDisplayPro-Med.eot");
-  src: url("../fonts/PFDinDisplayPro-Med.eot?#iefix") format('embedded-opentype'), url("../fonts/PFDinDisplayPro-Med.woff") format('woff'), url("../fonts/PFDinDisplayPro-Med.ttf") format('truetype');
+  font-family: "PFDinCondPro-Medium";
+  src: url("../fonts/pfdintextcondpro-medium-webfont.eot");
+  src: url("../fonts/pfdintextcondpro-medium-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/pfdintextcondpro-medium-webfont.woff") format('woff'), url("../fonts/pfdintextcondpro-medium-webfont.ttf") format('truetype'), url("../fonts/pfdintextcondpro-medium-webfont.svg#pf_din_text_cond_promedium") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -122,7 +122,7 @@ a img {
   border: none;
 }
 body {
-  font: 100%/1.05 'PFDinDisplayPro-Regular', sans-serif;
+  font: 100%/1.05 'PFDinCondPro-Regular', sans-serif;
   min-width: 1260px;
   text-rendering: optimizeSpeed;
 }
@@ -158,38 +158,37 @@ a {
 .b-portfolio__heading,
 .b-promo__heading--big,
 .b-steps__heading {
-  font-size: 55px;
+  font-size: 60px;
 }
 .heading--xl,
 .b-leads__heading,
 .b-order-form__heading,
-.b-services__heading,
 .b-traffic__heading {
-  font-size: 45px;
+  font-size: 50px;
 }
 .heading--l {
-  font-size: 36px;
+  font-size: 38px;
 }
 .heading--md,
-.b-promo__heading--small {
+.b-leads__item__heading {
   font-size: 32px;
 }
-.heading--sm {
-  font-size: 28px;
+.heading--sm,
+.b-promo__heading--small,
+.b-traffic__item__heading {
+  font-size: 30px;
 }
 .heading--uppercase {
   text-transform: uppercase;
 }
-.heading--margin,
-.b-leads__heading,
-.b-services__heading {
+.heading--margin {
   margin-bottom: 30px;
 }
 .text {
   line-height: 1.2;
 }
 .bold {
-  font-family: 'PFDinDisplayPro-Bold', sans-serif;
+  font-family: 'PFDinCondPro-Bold', sans-serif;
 }
 .form__label {
   display: block;
@@ -248,12 +247,12 @@ a {
   display: inline-block;
   vertical-align: top;
   width: 415px;
-  font-family: 'PFDinDisplayPro-Light', sans-serif;
+  font-family: 'PFDinCondPro-Light', sans-serif;
 }
 .b-clients__item + .b-clients__item {
   margin-left: 0px;
 }
-.b-clients__item img {
+.b-clients__image {
   margin-bottom: 25px;
 }
 .b-footer {
@@ -268,10 +267,37 @@ a {
 .b-leads {
   padding: 45px 0 0;
   background: #f6f6f6;
+  text-align: center;
 }
 .b-leads__heading {
-  text-align: center;
   text-transform: uppercase;
+}
+.b-leads__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin: 60px 58px;
+}
+.b-leads__item__heading {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.b-leads__item__text {
+  font-size: 18px;
+  color: #7c7c7c;
+  margin-bottom: 10px;
+}
+.b-leads__image {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.b-leads__price {
+  font-size: 24px;
+  color: #7c7c7c;
+}
+.b-leads__price span {
+  font: 32px 'PFDinCondPro-Medium', sans-serif;
+  color: #00aa86;
 }
 .b-order-form {
   padding: 65px 0 50px;
@@ -300,7 +326,7 @@ a {
   width: 335px;
   margin: 75px 40px;
 }
-.b-portfolio__item img {
+.b-portfolio__image {
   display: inline-block;
   margin-bottom: 18px;
 }
@@ -313,22 +339,17 @@ a {
 }
 .b-promo__heading--big {
   text-shadow: 1px 2px 0px #6d6d6d;
-  margin-bottom: 290px;
+  margin-bottom: 280px;
 }
 .b-promo__heading--big span {
-  font-size: 65px;
+  font-size: 70px;
   text-transform: uppercase;
 }
 .b-promo__heading--small {
   margin: 0 0 15px;
 }
-.b-services {
-  padding: 45px 0 0;
-  background: #f6f6f6;
-}
-.b-services__heading {
-  text-align: center;
-  text-transform: uppercase;
+.b-promo__info {
+  font-size: 17px;
 }
 .b-steps {
   padding: 50px 0;
@@ -341,11 +362,12 @@ a {
 .b-steps__item {
   display: inline-block;
   vertical-align: top;
+  font-size: 17px;
 }
 .b-steps__item + .b-steps__item {
   margin-left: 18px;
 }
-.b-steps__item img {
+.b-steps__image {
   display: block;
   margin: 0 0 15px;
 }
@@ -386,20 +408,20 @@ a {
   display: inline-block;
   vertical-align: top;
   position: relative;
+  width: 168px;
 }
 .b-traffic__item + .b-traffic__item {
-  margin-left: 70px;
+  margin-left: 45px;
 }
 .b-traffic__item + .b-traffic__item:before {
   content: '+';
-  font: 80px 'PFDinDisplayPro-Light', sans-serif;
-  font-weight: 100;
+  font: 105px 'PFDinCondPro-Light', sans-serif;
   position: absolute;
-  left: -55px;
-  top: 0px;
+  left: -45px;
+  top: 0;
 }
 .b-traffic__item__heading {
-  font-size: 28px;
+  font-family: 'PFDinCondPro-Medium', sans-serif;
   text-transform: uppercase;
 }
 .b-traffic__item img {
