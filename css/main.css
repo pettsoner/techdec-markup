@@ -214,7 +214,8 @@ a {
 .heading--margin {
   margin-bottom: 15px;
 }
-.text {
+.text,
+.b-how-we-work__text {
   line-height: 1.15;
 }
 .bold {
@@ -412,11 +413,24 @@ a {
   color: #505050;
 }
 .b-how-we-work__item + .b-how-we-work__item {
-  margin-left: 18px;
+  margin-left: 23px;
+}
+.b-how-we-work__item + .b-how-we-work__item .b-how-we-work__text:before {
+  content: '';
+  width: 16px;
+  height: 44px;
+  background: url("../img/arrow-icon.png") no-repeat;
+  position: absolute;
+  left: -32px;
+  top: 22px;
 }
 .b-how-we-work__image {
   display: block;
   margin: 0 0 15px;
+}
+.b-how-we-work__text {
+  display: inline-block;
+  position: relative;
 }
 .b-leads {
   padding: 45px 30px;
