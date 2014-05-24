@@ -121,9 +121,13 @@ td {
 a img {
   border: none;
 }
+html {
+  width: 100%;
+}
 body {
   font: 100%/1.05 'PFDinCondPro-Regular', sans-serif;
   min-width: 1260px;
+  width: 100%;
   text-rendering: optimizeSpeed;
 }
 p {
@@ -468,8 +472,8 @@ a {
 .b-leads__item {
   display: inline-block;
   vertical-align: top;
-  width: 350px;
-  margin: 0 34px;
+  width: 340px;
+  margin: 0 35px;
 }
 .b-leads__item__heading {
   text-transform: uppercase;
