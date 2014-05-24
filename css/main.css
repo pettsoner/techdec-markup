@@ -447,8 +447,8 @@ a {
 .b-leads__item {
   display: inline-block;
   vertical-align: top;
-  width: 300px;
-  margin: 0 58px;
+  width: 350px;
+  margin: 0 34px;
 }
 .b-leads__item__heading {
   text-transform: uppercase;
@@ -490,7 +490,7 @@ a {
   background: #ededed;
 }
 .b-leads .bx-wrapper .bx-prev {
-  top: 128px;
+  top: 120px;
   padding: 20px 0 0;
 }
 .b-leads .bx-wrapper .bx-prev:before {
@@ -502,7 +502,7 @@ a {
   height: 16px;
 }
 .b-leads .bx-wrapper .bx-next {
-  top: 1128px;
+  top: 1136px;
   padding: 20px 0 0;
 }
 .b-leads .bx-wrapper .bx-next:after {

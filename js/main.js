@@ -9,4 +9,12 @@ $(document).ready(function() {
         prevText: 'Еще рынки'
     }); 
 
+    $('.b-leads .bx-next').click(function() {
+
+        $('html, body').animate({
+            scrollTop: $('.b-leads .bx-prev').offset().top
+        }, 800);
+
+    });
+
 });
