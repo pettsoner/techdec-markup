@@ -163,11 +163,13 @@ a {
 .heading--s,
 .heading--xs,
 .heading--xxs,
+.b-bonus__heading,
 .b-clients__heading,
 .b-how-we-work__heading,
 .b-leads__heading,
 .b-leads__item__heading,
 .b-order-form__heading,
+.b-order-form__message,
 .b-portfolio__heading,
 .b-portfolio__item__heading,
 .b-promo__heading--big,
@@ -189,7 +191,8 @@ a {
 .b-traffic__heading {
   font-size: 50px;
 }
-.heading--l {
+.heading--l,
+.b-bonus__heading {
   font-size: 38px;
 }
 .heading--m,
@@ -198,6 +201,7 @@ a {
   font-size: 32px;
 }
 .heading--s,
+.b-order-form__message,
 .b-promo__heading--small,
 .b-traffic__item__heading {
   font-size: 30px;
@@ -282,6 +286,23 @@ a {
 }
 :-ms-input-placeholder {
   color: #7c7c7c;
+}
+.b-bonus .container {
+  padding: 50px 0 50px 150px;
+  background: url("../img/b-bonus-bg.png") no-repeat 0 50px;
+}
+.b-bonus__heading {
+  margin-bottom: 20px;
+}
+.b-bonus__text {
+  font-size: 24px;
+  color: #5c5c5c;
+}
+.b-bonus__text__bold {
+  color: #00aa86;
+}
+.b-bonus__text strong {
+  font-family: 'PFDinCondPro-Medium', sans-serif;
 }
 .b-clients {
   padding: 50px 0;
@@ -538,6 +559,11 @@ a {
 }
 .b-order-form__phone__number {
   width: 926px;
+}
+.b-order-form__message {
+  padding: 70px 50px 70px 150px;
+  background: url("../img/main-icon.png") no-repeat 25px 50%;
+  color: #464444;
 }
 .b-portfolio {
   padding: 50px 0 0;

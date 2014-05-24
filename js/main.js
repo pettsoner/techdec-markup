@@ -9,12 +9,44 @@ $(document).ready(function() {
         prevText: 'Еще рынки'
     }); 
 
-    $('.b-leads .bx-next').click(function() {
+    /* Форма заказа
+    ------------------------------------------------------- */
+
+    $('.b-order-form form').submit(function(e) {
+
+        $this = $(this);
+
+        $.fancybox('<div class="b-order-form__message">Спасибо, Ваша сообщение отправлено!</div>', {
+            padding: 0
+        });
+
+        return false;
+
+        $.post('contacts.php', $this.serialize(), function(response) {
+
+            if (response.error) {
+
+                alert(response.error);
+
+            } else {
+
+                $.fancybox('<div class="b-order-form__message">Спасибо, Ваша сообщение отправлено!</div>', {
+                    padding: 0
+                });
+                
+            }
+
+    }, 'json');
+
+        e.preventDefault();
+    });
+
+    /*$('.b-leads .bx-next').click(function() {
 
         $('html, body').animate({
             scrollTop: $('.b-leads .bx-prev').offset().top
         }, 800);
 
-    });
+    });*/
 
 });
