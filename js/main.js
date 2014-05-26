@@ -41,6 +41,22 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $.ionSound({
+        sounds: [
+            "record8"
+        ],
+        path: "sounds/",
+        multiPlay: false,
+        volume: "0.5"
+    });
+
+    $('[data-sound]').click(function(e) {
+
+        $.ionSound.play($(this).data('sound'));
+        e.preventDefault();
+
+    });
+
     /*$('.b-leads .bx-next').click(function() {
 
         $('html, body').animate({
